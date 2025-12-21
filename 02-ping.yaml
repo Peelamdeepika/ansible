@@ -1,5 +1,6 @@
 - name: PING
   hosts: web
+  remote_user: ec2-user
   tasks:
   - name: pinging server
     ansible.builtin.ping:

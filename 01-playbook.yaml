@@ -1,17 +1,12 @@
-- name : nginx install #our wish
-  host : web #ip 
-  become : yes #-b to becoe root user
+- name : nginx install 
+  host : web  
+  become : yes 
   task : 
-  -name : installing ingix #our wish
-  ansible.builtin.package module:  #taken from google
-   name : nginx #service to install and start
-   state : present #google
-   -name : staring nginx #our wish
-   ansible.builtin.service module: #google
-     name : nginx #service to restart
+  -name : installing ingix 
+  ansible.builtin.package module:  
+   name : nginx 
+   state : present 
+   -name : staring nginx 
+   ansible.builtin.service module: 
+     name : nginx 
      state: started
-
-   
-  
-
-   

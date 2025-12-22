@@ -10,4 +10,4 @@
     vars:
       Fullname: sai 
     ansible.builtin.ping:
-      msg: "hi {{Fullnamename}}, I am from {{place}}, currently i am doing {{occupation}}"
+      msg: "hi {{Fullname}}, I am from {{place}}, currently i am doing {{occupation}}"

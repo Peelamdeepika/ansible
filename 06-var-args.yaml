@@ -5,3 +5,8 @@
   - name: printing
     ansible.builtin.debug:
      msg: "course i am learning: {{Course}}, by trainer : {{train}}"
+
+
+
+     #command while executing for this args:
+     #ansible-playbook -i inventory.ini 06-var-args.yaml -e "Course=Devos" -e "train=Deepika"

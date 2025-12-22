@@ -1,0 +1,18 @@
+- name: "printing for variables"
+  hosts: local
+  connection: local
+  vars:
+   Course: devops
+  var_files:
+  - information.yaml
+  var_prompt:
+  - name: print
+    promt: "enter your course name"
+    private: false
+  tasks:
+  - name: "printing course"
+    vars:
+      Course: "shell scripting"
+    ansible.builtin.debug:
+      msg: "your course name is: {{Course}}"
+         

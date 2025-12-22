@@ -5,4 +5,9 @@
     ansible.builtin.debug:
      msg: "couser learning: {{Course}}, training given by {{Trainer}}"
 
+     #in inventory.ini file we need to give as
+     # see inventory.ini file
+     #[local]
+     #localhost Couse="devops with aws" Trainer="Deepika" ansible_user=ec2-user ansible_password=DevOps321
+
   

@@ -6,7 +6,7 @@
     studying: Devops
     Timeduration: "12 hours"
   tasks:
-    vars:
+  vars:
     Name: Deepthi
 - name: priniting some msg
   ansible.builtin.debug:

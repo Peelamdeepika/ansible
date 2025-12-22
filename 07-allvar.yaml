@@ -3,7 +3,7 @@
   connection: local
   vars:
    Course: "devops"
-  var_files:
+  vars_files:
   - information.yaml
   var_prompt:
   - name: print

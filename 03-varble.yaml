@@ -13,4 +13,9 @@
       msg: "hi {{Fullname}}, I am from {{place}}, currently i am doing {{occupation}}"
   - name: printing again
     ansible.builtin.debug:
-      msg: "hi {{Fullname}}, I am from {{place}}, I am doing {{occupation}}"   
+      msg: "hi {{Fullname}}, I am from {{place}}, I am doing {{occupation}}" 
+  - name:
+    vars_files:
+    - information.yaml
+    ansible.builtin.debug:
+      msg: "hi {{Fullname}}, I am from {{place}}, currently i am doing {{occupation}}"  

@@ -1,13 +1,14 @@
-- name: printing
+- name: pringting some text
   hosts: local
   connection: local
   vars:
-    Name: Deepika
-    studying: Devops
-    Timeduration: "12 hours"
+    name: deepika
+    place: nellore
+    occupation: job
   tasks:
-  - name: priniting some msg
+  - name: priniting
     vars:
-      Name: Deepthi
-    ansible.builtin.debug:
-      msg: "hi {{Name}}, I am preparing {{studying}}, for almost {{Timeduration}}"
+      name: sai 
+    ansible.builtin.ping:
+      msg: "hi {{name}}, I am from {{place}}, currently i am doing {{occupation}}"
+         

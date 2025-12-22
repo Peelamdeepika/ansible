@@ -3,6 +3,6 @@
   tasks:
   - name: Printing
     ansible.builtin.debug:
-     msg: "couser learning: {{Course}}, training given by {{Deepika}}"
+     msg: "couser learning: {{Course}}, training given by {{Trainer}}"
 
   

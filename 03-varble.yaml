@@ -14,7 +14,7 @@
   - name: printing again
     ansible.builtin.debug:
       msg: "hi {{Fullname}}, I am from {{place}}, I am doing {{occupation}}" 
-  - name:
+  - name: printing from other aml file
     vars_files:
     - information.yaml
     ansible.builtin.debug:

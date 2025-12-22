@@ -5,10 +5,10 @@
    Course: "devops"
   vars_files:
   - information.yaml
-  vars_prompt:
-  - name: print
-    prompt: "enter your course name"
-    private: false
+  # vars_prompt:
+  # - name: print
+  #   prompt: "enter your course name"
+  #   private: false
   tasks:
   - name: "printing course"
     vars:

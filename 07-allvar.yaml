@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   vars:
-   Course: devops
+   Course: "devops"
   var_files:
   - information.yaml
   var_prompt:
   - name: print
-    promt: "enter your course name"
+    prompt: "enter your course name"
     private: false
   tasks:
   - name: "printing course"

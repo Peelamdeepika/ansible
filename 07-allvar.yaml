@@ -1,8 +1,8 @@
 - name: "printing for variables"
   hosts: local
   connection: local
-  vars:
-   Course: "devops"
+  # vars:
+  #  Course: "devops"
   # vars_files:
   # - information.yaml
   # vars_prompt:

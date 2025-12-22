@@ -1,7 +1,11 @@
 - name: printing
   hosts: local
   connection: local
+  vars:
+    Name: Deepika
+    studying: Devops
+    Timeduration: "12 hours"
   tasks:
   - name: priniting some msg
     ansible.builtin.debug:
-     msg: "hello world"
+     msg: "hi {{Name}}, I am preparing {{studying}}, for almost {{Timeduration}}"

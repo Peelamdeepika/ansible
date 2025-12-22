@@ -1,6 +1,6 @@
 - name: printing from args
   hosts: local
-  connection: yes
+  connection: local
   tasks: 
   - name: printing
     ansible.builtin.debug:

@@ -2,13 +2,12 @@
   hosts: local
   connection: local
   vars:
-    name: deepika
+    Fullname: deepika
     place: nellore
     occupation: job
   tasks:
   - name: priniting
     vars:
-      name: sai 
+      Fullname: sai 
     ansible.builtin.ping:
-      msg: "hi {{name}}, I am from {{place}}, currently i am doing {{occupation}}"
-         
+      msg: "hi {{Fullnamename}}, I am from {{place}}, currently i am doing {{occupation}}"

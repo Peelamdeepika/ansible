@@ -4,7 +4,7 @@
   vars:
     Name: Deepika
     studying: Devops
-    Timeduration: "12 hours"
+    Time duration: "12 hours"
   tasks:
   - name: priniting some msg
     ansible.builtin.debug:

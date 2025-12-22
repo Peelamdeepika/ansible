@@ -7,3 +7,8 @@
   - name: printing the information #our wish
     ansible.builtin.debug:  #module for printing
       msg: "hi {{Fullname}}, I am from {{Place}}, currently i am doing {{occupation}}" #msg which we want to print
+  - name: printing different
+    vars:
+      Fullname: deepthi
+    ansible.builtin.debug:
+      msg: "hi {{Fullname}}, I am from {{Place}}, currently i am doing {{occupation}}"

@@ -1,0 +1,8 @@
+- name: "var fro inv"
+  hosts: local
+  tasks:
+  - name: Printing
+    ansible.builtin.debug:
+     msg: "couser learning: {{Course}}, training given by {{Deepika}}"
+
+  

@@ -7,7 +7,7 @@
   - name: trainer 
     prompt: enter your trainer name
   - name: "timehours"
-    prmpt: enter duration
+    prompt: enter duration
   tasks:
   - name: printing confidential details
     ansible.builtin.debug:

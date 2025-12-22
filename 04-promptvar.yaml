@@ -1,9 +1,10 @@
 - name: printing
   hosts: local
   connection: local
-  vars_prompt:
-  - name: Course
-    prompt: enter your course name
+  vars_prompt: #seure time we will use
+  - name: Course 
+    prompt: enter your course name #u are able to see this msg
+    private: false #it is not confidental
   - name: trainer 
     prompt: enter your trainer name
   - name: "timehours"
@@ -11,4 +12,4 @@
   tasks:
   - name: printing confidential details
     ansible.builtin.debug:
-      msg: "course is {{Course}}, {{trainer}}, {{timehours}}"  
+      msg: "course : {{Course}}, {{trainer}}, {{timehours}}"  

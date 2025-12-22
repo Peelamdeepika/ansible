@@ -1,21 +1,9 @@
-- name: pringting some text
+- name: Printing
   hosts: local
   connection: local
-  vars:
-    Fullname: deepika
-    place: nellore
-    occupation: job
+  vars_files:
+  - information.yaml
   tasks:
-  - name: priniting
-    vars:
-      Fullname: sai 
+  - name: printing the information
     ansible.builtin.debug:
       msg: "hi {{Fullname}}, I am from {{place}}, currently i am doing {{occupation}}"
-  - name: printing again
-    ansible.builtin.debug:
-      msg: "hi {{Fullname}}, I am from {{place}}, I am doing {{occupation}}" 
-  - name: printing from other aml file
-    vars_files:
-    - information.yaml
-    ansible.builtin.debug:
-      msg: "hi {{Fullname}}, I am from {{place}}, currently i am doing {{occupation}}"  

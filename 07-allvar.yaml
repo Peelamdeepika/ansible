@@ -5,7 +5,7 @@
    Course: "devops"
   vars_files:
   - information.yaml
-  var_prompt:
+  vars_prompt:
   - name: print
     prompt: "enter your course name"
     private: false

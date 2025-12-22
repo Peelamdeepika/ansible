@@ -6,4 +6,4 @@
   tasks:
   - name: printing the information
     ansible.builtin.debug:
-      msg: "hi {{Fullname}}, I am from {{place}}, currently i am doing {{occupation}}"
+      msg: "hi {{Fullname}}, I am from {{Place}}, currently i am doing {{occupation}}"

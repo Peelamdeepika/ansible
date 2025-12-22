@@ -3,8 +3,8 @@
   connection: local
   vars:
    Course: "devops"
-  vars_files:
-  - information.yaml
+  # vars_files:
+  # - information.yaml
   # vars_prompt:
   # - name: print
   #   prompt: "enter your course name"

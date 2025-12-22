@@ -6,8 +6,8 @@
     studying: Devops
     Timeduration: "12 hours"
   tasks:
+- name: priniting some msg
   vars:
     Name: Deepthi
-- name: priniting some msg
   ansible.builtin.debug:
      msg: "hi {{Name}}, I am preparing {{studying}}, for almost {{Timeduration}}"

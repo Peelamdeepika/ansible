@@ -11,8 +11,8 @@
   #   private: false
   tasks:
   - name: "printing course"
-    vars:
-      Course: "shell scripting"
+    # vars:
+    #   Course: "shell scripting"
     ansible.builtin.debug:
       msg: "your course name is: {{Course}}"
          

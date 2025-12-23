@@ -3,9 +3,8 @@
   connection: local
   vars:
     my_number: 15
-
   tasks:
-    - name: printing a number
-      ansible.builtin.debug:
-        msg: "given number is greater than 10 that is {{ my_number }}"
-      when: my_number > 10
+  - name: "printng a number" 
+    ansible.builtin.debug:
+       msg: "given number is greater than 10 that is {{my_number}}"
+    when: my_number > 10  

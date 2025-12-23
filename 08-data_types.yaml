@@ -8,8 +8,8 @@
     ansible.builtin.debug:
        msg: "given number is greater than 10 that is {{my_number}}"
     when: my_number > 10 
-    
+
   - name: "printing a num"  
-    asible.builtin.debug:
+    ansible.builtin.debug:
       msg: "print if given number is greater than {{my_number}}" 
     when: my_number <= 7  

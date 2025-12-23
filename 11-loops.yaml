@@ -1,0 +1,14 @@
+- name: looping
+  hosts: local
+  connection: local
+  tasks:
+  - name: just checking loops concept
+    ansible.builtin.debug:
+     msg: "my family memebers are {{ item }}"
+    loop:
+      - deepika
+      - deepthi 
+      - anitha
+      - ashok
+      - premsai
+      - mounika

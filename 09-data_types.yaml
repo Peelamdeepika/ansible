@@ -1,0 +1,21 @@
+- name: checking data types
+  hosts: local
+  connection: local
+  vars:
+   Trainer: Deepika #string
+   timestamp: 10hours #number
+   courses:  #list
+     -aws
+     -shell
+     -ansible
+   Tools: #mapping(key value based)
+     shell: linux
+     anisble: playbook
+   live: true #boolean
+  tasks:
+  - name: "printing course details"
+    ansible.builtin.debug:
+      msg: "My traininer name is {{Trainer}}, she is taking almost {{timestamp}}, to discuss {{courses}}, which is covering {{Tools}}, in {{live}}, sessions" 
+
+
+  

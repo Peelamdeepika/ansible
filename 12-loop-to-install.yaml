@@ -1,0 +1,12 @@
+- name: installing packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: installing vial loop concept"
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+      - gcc
+      - mysql
+      - zip  

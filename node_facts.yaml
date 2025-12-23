@@ -1,6 +1,6 @@
-- name: node info
+- name: node facts
   hosts: web
   tasks:
   - name: pulling node info
     ansible.builtin.debug:
-      msg: "{{ ansible_facts }}"
+      msg: "{{ anisble_facts }}"

@@ -8,4 +8,4 @@
 
   - name: copying the command
     ansible.builtin.debug:
-      msg: " the command output is {{ command_output }}"
+      msg: "{{ command_output }}"

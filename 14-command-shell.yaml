@@ -2,10 +2,11 @@
   hosts: local
   connection: local
   tasks: 
-  - name: using command concept
-    ansible.builtin.command: ls -lrth 
-    register: command_output
+  - name: using command and shell concept
+    #ansible.builtin.command: ls -lrth 
+    ansible.builtin.shell: ls -lrth > /tmp/output.txt
+    # register: command_output
 
-  - name: copying the command
-    ansible.builtin.debug:
-      msg: "{{ command_output }}"
+  # - name: copying the command
+  #   ansible.builtin.debug:
+  #     msg: "{{ command_output }}"
